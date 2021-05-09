@@ -1,0 +1,11 @@
+    .large-3 {flex-basis: 25%;}
+  
+    nav ul {margin-left: 2vw;}
+    nav li {width:auto;}
+    nav a {padding: .7rem 1rem;}
+
+    // create .small-1 - .small-12 
+@for $i from 1 through 12 {
+    $w:($i / 12) * 100%;
+    .large-#{$i} {flex-basis: $w;}
+}
